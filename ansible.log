@@ -1,0 +1,2015 @@
+2023-05-20 15:41:00,126 p=32475 u=ec2-user n=ansible | 44.197.181.48 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:41:00,396 p=32475 u=ec2-user n=ansible | 3.83.33.86 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:43:07,417 p=32514 u=ec2-user n=ansible | 44.197.181.48 | CHANGED | rc=0 >>
+Sat May 20 15:43:07 UTC 2023
+
+2023-05-20 15:43:07,433 p=32514 u=ec2-user n=ansible | 3.83.33.86 | CHANGED | rc=0 >>
+Sat May 20 15:43:07 UTC 2023
+
+2023-05-20 15:43:17,166 p=32551 u=ec2-user n=ansible | 3.83.33.86 | CHANGED | rc=0 >>
+Sat May 20 15:43:17 UTC 2023
+
+2023-05-20 15:43:17,222 p=32551 u=ec2-user n=ansible | 44.197.181.48 | CHANGED | rc=0 >>
+Sat May 20 15:43:17 UTC 2023
+
+2023-05-20 16:55:54,781 p=661 u=ec2-user n=ansible | PLAY [devserver] ************************************************************************************************************
+2023-05-20 16:55:54,796 p=661 u=ec2-user n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2023-05-20 16:55:57,883 p=661 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 16:55:57,921 p=661 u=ec2-user n=ansible | TASK [creating user] ********************************************************************************************************
+2023-05-20 16:55:58,670 p=661 u=ec2-user n=ansible | changed: [3.83.33.86]
+2023-05-20 16:55:58,684 p=661 u=ec2-user n=ansible | TASK [create file] **********************************************************************************************************
+2023-05-20 16:55:59,109 p=661 u=ec2-user n=ansible | changed: [3.83.33.86]
+2023-05-20 16:55:59,122 p=661 u=ec2-user n=ansible | TASK [read the output] ******************************************************************************************************
+2023-05-20 16:55:59,149 p=661 u=ec2-user n=ansible | ok: [3.83.33.86] => {
+    "output": "VARIABLE IS NOT DEFINED!"
+}
+2023-05-20 16:55:59,161 p=661 u=ec2-user n=ansible | TASK [create directory] *****************************************************************************************************
+2023-05-20 16:55:59,442 p=661 u=ec2-user n=ansible | changed: [3.83.33.86]
+2023-05-20 16:55:59,456 p=661 u=ec2-user n=ansible | TASK [install apache] *******************************************************************************************************
+2023-05-20 16:56:04,975 p=661 u=ec2-user n=ansible | changed: [3.83.33.86]
+2023-05-20 16:56:04,988 p=661 u=ec2-user n=ansible | TASK [install finger] *******************************************************************************************************
+2023-05-20 16:56:06,309 p=661 u=ec2-user n=ansible | ok: [3.83.33.86] => (item=wget)
+2023-05-20 16:56:13,546 p=661 u=ec2-user n=ansible | changed: [3.83.33.86] => (item=finger)
+2023-05-20 16:56:13,589 p=661 u=ec2-user n=ansible | PLAY RECAP ******************************************************************************************************************
+2023-05-20 16:56:13,589 p=661 u=ec2-user n=ansible | 3.83.33.86                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:04:02,433 p=819 u=ec2-user n=ansible | PLAY [devserver] ************************************************************************************************************
+2023-05-20 17:04:02,456 p=819 u=ec2-user n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2023-05-20 17:04:05,345 p=819 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:04:05,400 p=819 u=ec2-user n=ansible | TASK [creating user] ********************************************************************************************************
+2023-05-20 17:04:06,058 p=819 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:04:06,071 p=819 u=ec2-user n=ansible | TASK [create file] **********************************************************************************************************
+2023-05-20 17:04:06,481 p=819 u=ec2-user n=ansible | changed: [3.83.33.86]
+2023-05-20 17:04:06,493 p=819 u=ec2-user n=ansible | TASK [read the output] ******************************************************************************************************
+2023-05-20 17:04:06,519 p=819 u=ec2-user n=ansible | ok: [3.83.33.86] => {
+    "msg": "hello from ansible this is running  on RedHat"
+}
+2023-05-20 17:04:06,532 p=819 u=ec2-user n=ansible | TASK [create directory] *****************************************************************************************************
+2023-05-20 17:04:06,834 p=819 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:04:06,846 p=819 u=ec2-user n=ansible | TASK [install apache] *******************************************************************************************************
+2023-05-20 17:04:08,207 p=819 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:04:08,219 p=819 u=ec2-user n=ansible | TASK [install finger] *******************************************************************************************************
+2023-05-20 17:04:09,069 p=819 u=ec2-user n=ansible | ok: [3.83.33.86] => (item=wget)
+2023-05-20 17:04:09,931 p=819 u=ec2-user n=ansible | ok: [3.83.33.86] => (item=finger)
+2023-05-20 17:04:09,956 p=819 u=ec2-user n=ansible | PLAY RECAP ******************************************************************************************************************
+2023-05-20 17:04:09,957 p=819 u=ec2-user n=ansible | 3.83.33.86                 : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:13:01,025 p=911 u=ec2-user n=ansible | PLAY [devserver] ***********************************************************************************************************************************
+2023-05-20 17:13:01,040 p=911 u=ec2-user n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2023-05-20 17:13:04,098 p=911 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:13:04,122 p=911 u=ec2-user n=ansible | TASK [create directory] ****************************************************************************************************************************
+2023-05-20 17:13:04,621 p=911 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:13:04,645 p=911 u=ec2-user n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2023-05-20 17:13:04,645 p=911 u=ec2-user n=ansible | 3.83.33.86                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:13:34,046 p=943 u=ec2-user n=ansible | PLAY [devserver] ***********************************************************************************************************************************
+2023-05-20 17:13:34,061 p=943 u=ec2-user n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2023-05-20 17:13:35,771 p=943 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:13:35,792 p=943 u=ec2-user n=ansible | TASK [create directory] ****************************************************************************************************************************
+2023-05-20 17:13:36,191 p=943 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:13:36,214 p=943 u=ec2-user n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2023-05-20 17:13:36,215 p=943 u=ec2-user n=ansible | 3.83.33.86                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:15:38,623 p=981 u=ec2-user n=ansible | Encryption successful
+2023-05-20 17:18:42,405 p=989 u=ec2-user n=ansible | PLAY [devserver] ***********************************************************************************************************************************
+2023-05-20 17:18:42,427 p=989 u=ec2-user n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2023-05-20 17:18:44,642 p=989 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:18:44,671 p=989 u=ec2-user n=ansible | TASK [create directory] ****************************************************************************************************************************
+2023-05-20 17:18:45,195 p=989 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:18:45,218 p=989 u=ec2-user n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2023-05-20 17:18:45,218 p=989 u=ec2-user n=ansible | 3.83.33.86                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:20:57,063 p=1029 u=ec2-user n=ansible | Decryption successful
+2023-05-20 17:21:27,855 p=1033 u=ec2-user n=ansible | Encryption successful
+2023-05-20 17:23:05,562 p=1042 u=ec2-user n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) for /home/ec2-user/inv.yml
+2023-05-20 17:23:21,572 p=1044 u=ec2-user n=ansible | Rekey successful
+2023-05-20 17:23:38,707 p=1049 u=ec2-user n=ansible | PLAY [devserver] ***********************************************************************************************************************************
+2023-05-20 17:23:38,742 p=1049 u=ec2-user n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2023-05-20 17:23:40,848 p=1049 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:23:40,871 p=1049 u=ec2-user n=ansible | TASK [create directory] ****************************************************************************************************************************
+2023-05-20 17:23:41,296 p=1049 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:23:41,317 p=1049 u=ec2-user n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2023-05-20 17:23:41,318 p=1049 u=ec2-user n=ansible | 3.83.33.86                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-20 17:24:05,154 p=1088 u=ec2-user n=ansible | Decryption successful
+2023-05-20 17:31:20,303 p=1161 u=ec2-user n=ansible | playbook: play.yml
+2023-05-20 17:31:39,971 p=1166 u=ec2-user n=ansible | PLAY [devserver] ***********************************************************************************************************************************
+2023-05-20 17:31:39,983 p=1166 u=ec2-user n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2023-05-20 17:31:42,010 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:31:42,031 p=1166 u=ec2-user n=ansible | TASK [creating user] *******************************************************************************************************************************
+2023-05-20 17:31:42,655 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:31:42,682 p=1166 u=ec2-user n=ansible | TASK [create file] *********************************************************************************************************************************
+2023-05-20 17:31:43,146 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:31:43,157 p=1166 u=ec2-user n=ansible | TASK [read the output] *****************************************************************************************************************************
+2023-05-20 17:31:43,182 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86] => {
+    "msg": "hello from ansible this is running  on RedHat"
+}
+2023-05-20 17:31:43,194 p=1166 u=ec2-user n=ansible | TASK [create directory] ****************************************************************************************************************************
+2023-05-20 17:31:43,468 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:31:43,480 p=1166 u=ec2-user n=ansible | TASK [create a file] *******************************************************************************************************************************
+2023-05-20 17:31:43,853 p=1166 u=ec2-user n=ansible | skipping: [3.83.33.86]
+2023-05-20 17:31:43,864 p=1166 u=ec2-user n=ansible | TASK [install apache] ******************************************************************************************************************************
+2023-05-20 17:31:44,893 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86]
+2023-05-20 17:31:44,915 p=1166 u=ec2-user n=ansible | TASK [install finger] ******************************************************************************************************************************
+2023-05-20 17:31:45,777 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86] => (item=wget)
+2023-05-20 17:31:46,607 p=1166 u=ec2-user n=ansible | ok: [3.83.33.86] => (item=finger)
+2023-05-20 17:31:46,632 p=1166 u=ec2-user n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2023-05-20 17:31:46,633 p=1166 u=ec2-user n=ansible | 3.83.33.86                 : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-21 20:14:36,644 p=2926 u=ec2-user n=ansible | 44.201.218.243 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 20:14:36,715 p=2926 u=ec2-user n=ansible | 34.239.233.106 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 20:19:18,374 p=3012 u=ec2-user n=ansible | - Role apache was created successfully
+2023-05-21 20:19:32,696 p=3015 u=ec2-user n=ansible | - Role mysql was created successfully
+2023-05-23 22:43:40,035 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,035 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,036 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,036 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 22:43:40,037 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 22:43:40,037 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 22:43:40,049 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,049 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,049 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,051 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 22:43:40,054 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 22:43:40,065 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:43:40,066 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:43:40,067 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:43:40,068 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:43:40,069 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 22:43:40,071 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:43:40,072 p=20831 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 22:43:40,091 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,093 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,095 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,095 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 22:43:40,095 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 22:43:40,096 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 22:43:40,108 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,109 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:43:40,109 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,109 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 22:43:40,114 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,115 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,115 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,115 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 22:43:40,116 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 22:43:40,121 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,121 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,121 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,122 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 22:43:40,122 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 22:43:40,122 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 22:43:40,126 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,127 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,127 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,127 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 22:43:40,128 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 22:43:40,136 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,137 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,137 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,139 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 22:43:40,140 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 22:43:40,140 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 22:43:40,149 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,150 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:43:40,150 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,150 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 22:43:40,153 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:43:40,154 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:43:40,154 p=20831 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:43:40,154 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 22:43:40,154 p=20831 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 22:43:40,341 p=20831 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 22:44:29,761 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,761 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,768 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,768 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 22:44:29,769 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 22:44:29,769 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 22:44:29,775 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,775 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,776 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,776 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 22:44:29,776 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 22:44:29,780 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:44:29,781 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:44:29,781 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:44:29,781 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 22:44:29,782 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 22:44:29,782 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:44:29,782 p=20909 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 22:44:29,787 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,787 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,788 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,788 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 22:44:29,788 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 22:44:29,788 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 22:44:29,799 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,799 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:44:29,799 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,800 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 22:44:29,805 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,805 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,805 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,806 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 22:44:29,806 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 22:44:29,811 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,811 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,812 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,812 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 22:44:29,812 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 22:44:29,812 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 22:44:29,818 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,818 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,818 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,818 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 22:44:29,819 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 22:44:29,830 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,830 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,831 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,831 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 22:44:29,831 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 22:44:29,831 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 22:44:29,839 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,840 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 22:44:29,840 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,840 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 22:44:29,845 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 22:44:29,845 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 22:44:29,845 p=20909 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 22:44:29,845 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 22:44:29,846 p=20909 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 22:44:30,060 p=20909 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 23:19:51,647 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,647 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,648 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,648 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 23:19:51,648 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 23:19:51,648 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 23:19:51,651 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,651 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,651 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,652 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 23:19:51,652 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 23:19:51,655 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:19:51,655 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:19:51,655 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:19:51,656 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:19:51,656 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 23:19:51,656 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:19:51,656 p=23006 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 23:19:51,659 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,659 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,659 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,659 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 23:19:51,660 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 23:19:51,660 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 23:19:51,665 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,665 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid
+structure, it should be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:19:51,666 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,666 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 23:19:51,668 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,669 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,669 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,669 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 23:19:51,669 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 23:19:51,672 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,672 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,672 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,672 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 23:19:51,672 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 23:19:51,673 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 23:19:51,675 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,675 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,676 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,676 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 23:19:51,676 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 23:19:51,682 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,682 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,682 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,682 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 23:19:51,683 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 23:19:51,683 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 23:19:51,688 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,688 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid
+structure, it should be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:19:51,689 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---'
+supplied, '---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,689 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 23:19:51,691 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:19:51,692 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:19:51,692 p=23006 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied,
+'---' is normally a sign this is a YAML file.
+
+2023-05-23 23:19:51,692 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 23:19:51,692 p=23006 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 23:19:51,872 p=23006 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 23:25:02,537 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,537 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,537 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,538 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 23:25:02,539 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 23:25:02,539 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 23:25:02,549 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,550 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,550 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,550 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 23:25:02,550 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 23:25:02,561 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:25:02,561 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:25:02,563 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:25:02,564 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:25:02,564 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 23:25:02,564 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:25:02,564 p=23329 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 23:25:02,576 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,576 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,577 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,577 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 23:25:02,577 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 23:25:02,577 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 23:25:02,593 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,593 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:25:02,594 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,601 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 23:25:02,608 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,608 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,610 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,611 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 23:25:02,611 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 23:25:02,615 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,615 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,615 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,616 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 23:25:02,616 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 23:25:02,616 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 23:25:02,625 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,626 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,626 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,626 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 23:25:02,627 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 23:25:02,657 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,660 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,660 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,660 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 23:25:02,661 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 23:25:02,661 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 23:25:02,687 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,688 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:25:02,688 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,688 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 23:25:02,695 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:25:02,695 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:25:02,696 p=23329 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:25:02,696 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 23:25:02,697 p=23329 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 23:25:02,902 p=23329 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 23:32:20,273 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,273 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,274 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,274 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 23:32:20,275 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 23:32:20,275 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 23:32:20,278 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,279 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,279 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,279 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 23:32:20,280 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 23:32:20,284 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:32:20,284 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:32:20,284 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:32:20,285 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:32:20,285 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 23:32:20,286 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:32:20,286 p=23478 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 23:32:20,289 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,290 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,290 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,290 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 23:32:20,291 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 23:32:20,291 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 23:32:20,301 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,301 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:32:20,302 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,302 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 23:32:20,307 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,307 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,308 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,308 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 23:32:20,308 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 23:32:20,312 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,312 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,313 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,313 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 23:32:20,313 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 23:32:20,314 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 23:32:20,318 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,319 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,319 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,319 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 23:32:20,320 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 23:32:20,330 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,331 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,331 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,332 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 23:32:20,332 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 23:32:20,332 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 23:32:20,339 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,339 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:32:20,339 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,340 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 23:32:20,343 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:32:20,343 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:32:20,343 p=23478 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:32:20,344 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 23:32:20,344 p=23478 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 23:32:20,524 p=23478 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 23:33:30,991 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:30,991 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:30,992 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:30,992 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults/main.yml as an inventory source
+
+2023-05-23 23:33:30,992 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/defaults as an inventory source
+
+2023-05-23 23:33:30,992 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/files as an inventory source
+
+2023-05-23 23:33:30,996 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:30,997 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:30,997 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:30,997 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers/main.yml as an inventory source
+
+2023-05-23 23:33:30,998 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/handlers as an inventory source
+
+2023-05-23 23:33:31,004 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (author) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:33:31,005 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (description) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:33:31,005 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (company) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:33:31,005 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (license) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-05-23 23:33:31,006 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (min_ansible_version) in group (galaxy_info) as it is not a mapping, it is a <class 'float'>
+
+2023-05-23 23:33:31,007 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping key (galaxy_tags) in group (galaxy_info) as it is not a mapping, it is a <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:33:31,007 p=23608 u=ec2-user n=ansible | [WARNING]: Skipping 'dependencies' as this is not a valid group definition
+
+2023-05-23 23:33:31,011 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,012 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,012 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,012 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks/main.yml as an inventory source
+
+2023-05-23 23:33:31,013 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tasks as an inventory source
+
+2023-05-23 23:33:31,013 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/templates as an inventory source
+
+2023-05-23 23:33:31,021 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,022 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:33:31,022 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,023 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/tests/test.yml as an inventory source
+
+2023-05-23 23:33:31,026 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/apache/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,027 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,027 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/apache/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,028 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars/main.yml as an inventory source
+
+2023-05-23 23:33:31,028 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/apache/vars as an inventory source
+
+2023-05-23 23:33:31,032 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/defaults/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,036 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,036 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/defaults/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,038 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults/main.yml as an inventory source
+
+2023-05-23 23:33:31,038 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/defaults as an inventory source
+
+2023-05-23 23:33:31,039 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/files as an inventory source
+
+2023-05-23 23:33:31,047 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,047 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,048 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,048 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers/main.yml as an inventory source
+
+2023-05-23 23:33:31,048 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/handlers as an inventory source
+
+2023-05-23 23:33:31,057 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,058 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,058 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,059 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks/main.yml as an inventory source
+
+2023-05-23 23:33:31,059 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tasks as an inventory source
+
+2023-05-23 23:33:31,059 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/templates as an inventory source
+
+2023-05-23 23:33:31,069 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/tests/test.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,070 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with yaml plugin: YAML inventory has invalid structure, it should
+be a dictionary, got: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2023-05-23 23:33:31,070 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/tests/test.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,071 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/tests/test.yml as an inventory source
+
+2023-05-23 23:33:31,078 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with auto plugin: no root 'plugin' key found,
+'/home/ec2-user/roles/mysql/vars/main.yml' is not a valid YAML inventory plugin config file
+
+2023-05-23 23:33:31,079 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with yaml plugin: Parsed empty YAML file
+
+2023-05-23 23:33:31,079 p=23608 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/roles/mysql/vars/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is
+normally a sign this is a YAML file.
+
+2023-05-23 23:33:31,079 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars/main.yml as an inventory source
+
+2023-05-23 23:33:31,080 p=23608 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/roles/mysql/vars as an inventory source
+
+2023-05-23 23:33:31,296 p=23608 u=ec2-user n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).",
+    "unreachable": true
+}
+2023-05-23 23:39:05,495 p=23788 u=ec2-user n=ansible | 34.239.233.106 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-23 23:39:05,721 p=23788 u=ec2-user n=ansible | 44.201.218.243 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-24 00:25:03,449 p=25461 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:25:03,469 p=25461 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:25:06,521 p=25461 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:25:06,548 p=25461 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:25:09,063 p=25461 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:25:09,084 p=25461 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:25:09,215 p=25461 u=ec2-user n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-05-24 00:25:09,216 p=25461 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "msg": "Could not find or access 'file/index.html'\nSearched in:\n\t/home/ec2-user/roles/apache/files/file/index.html\n\t/home/ec2-user/roles/apache/file/index.html\n\t/home/ec2-user/roles/apache/tasks/files/file/index.html\n\t/home/ec2-user/roles/apache/tasks/file/index.html\n\t/home/ec2-user/files/file/index.html\n\t/home/ec2-user/file/index.html on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-05-24 00:25:09,220 p=25461 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:25:09,221 p=25461 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:27:36,446 p=25601 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:27:36,461 p=25601 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:27:39,574 p=25601 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:27:39,603 p=25601 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:27:41,292 p=25601 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:27:41,306 p=25601 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:27:41,731 p=25601 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:27:41,796 p=25601 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:27:41,796 p=25601 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:27:49,158 p=25686 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:27:49,173 p=25686 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:27:51,934 p=25686 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:27:51,990 p=25686 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:28:00,984 p=25686 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:28:00,998 p=25686 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:28:02,996 p=25686 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "79839c7c3e3babda51f5eaca05af954f6630a766", "msg": "argument 'remote_src' is of type <type 'str'> and we were unable to convert to bool: The value 'not' is not a valid boolean.  Valid booleans include: 0, 'on', 'f', 'false', 1, 'no', 'n', '1', '0', 't', 'y', 'off', 'yes', 'true'"}
+2023-05-24 00:28:03,005 p=25686 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:28:03,006 p=25686 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:28:56,522 p=25828 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:28:56,537 p=25828 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:28:58,314 p=25828 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:28:58,362 p=25828 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:28:59,678 p=25828 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:28:59,689 p=25828 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:29:00,838 p=25828 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:29:00,893 p=25828 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:29:00,893 p=25828 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:31:42,049 p=25959 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/roles/apache/tasks/main.yml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     remote_src: no
+    notify: restart apache
+    ^ here
+
+2023-05-24 00:33:18,576 p=25996 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:33:18,591 p=25996 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:33:20,502 p=25996 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:33:20,524 p=25996 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:33:21,554 p=25996 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:33:21,567 p=25996 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:33:22,738 p=25996 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:33:22,807 p=25996 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:33:22,808 p=25996 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:34:13,597 p=26120 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:34:13,612 p=26120 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:34:15,414 p=26120 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:34:15,464 p=26120 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:34:16,550 p=26120 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:34:16,562 p=26120 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:34:17,715 p=26120 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "3e379aa15edbd18f94cb2d40e2801763e7a69c3f", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:34:17,719 p=26120 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:34:17,719 p=26120 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:35:07,740 p=26214 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:35:07,755 p=26214 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:35:09,582 p=26214 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:35:09,610 p=26214 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:35:10,786 p=26214 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:35:10,798 p=26214 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:35:11,917 p=26214 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "ff30cda0183946b86fba89f6d8acd67009af48d6", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:35:11,919 p=26214 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:35:11,919 p=26214 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:36:34,981 p=26317 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:36:34,996 p=26317 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:36:37,889 p=26317 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:36:37,912 p=26317 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:36:38,923 p=26317 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:36:38,945 p=26317 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:36:40,112 p=26317 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "7e19bc779f784bd47f78d699e1ce7e5cbc00a90f", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:36:40,115 p=26317 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:36:40,115 p=26317 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:37:18,211 p=26419 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:37:18,225 p=26419 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:37:19,949 p=26419 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:37:19,971 p=26419 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:37:20,976 p=26419 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:37:20,995 p=26419 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:37:22,267 p=26419 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "3bb5a303da31341457d0945e267edbc1f8d374bc", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:37:22,268 p=26419 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:37:22,269 p=26419 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:38:06,418 p=26520 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:38:06,434 p=26520 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:38:08,090 p=26520 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:38:08,112 p=26520 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:38:09,220 p=26520 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:38:09,233 p=26520 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:38:09,955 p=26520 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:38:09,995 p=26520 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:38:09,995 p=26520 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:38:20,771 p=26596 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:38:20,798 p=26596 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:38:22,496 p=26596 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:38:22,539 p=26596 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:38:23,635 p=26596 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:38:23,647 p=26596 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:38:24,882 p=26596 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "3bb5a303da31341457d0945e267edbc1f8d374bc", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:38:24,885 p=26596 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:38:24,885 p=26596 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:40:20,207 p=26701 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:40:20,224 p=26701 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:40:23,041 p=26701 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:40:23,087 p=26701 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:40:24,183 p=26701 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:40:24,196 p=26701 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:40:24,955 p=26701 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:40:24,999 p=26701 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:40:25,006 p=26701 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:40:33,422 p=26799 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:40:33,438 p=26799 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:40:35,499 p=26799 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:40:35,526 p=26799 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:40:36,616 p=26799 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:40:36,629 p=26799 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:40:37,806 p=26799 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:40:37,808 p=26799 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:40:37,808 p=26799 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:41:03,077 p=26887 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:41:03,106 p=26887 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:41:04,814 p=26887 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:41:04,836 p=26887 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:41:05,917 p=26887 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:41:05,930 p=26887 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:41:07,248 p=26887 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:41:07,250 p=26887 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:41:07,251 p=26887 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:48:40,174 p=27064 u=ec2-user n=ansible | ERROR! couldn't resolve module/action 'ansible.legacy.copy)'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/ec2-user/roles/apache/tasks/main.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   state: present
+- name: copy index file
+  ^ here
+
+2023-05-24 00:53:38,186 p=27131 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:53:38,201 p=27131 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:53:40,181 p=27131 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:53:40,205 p=27131 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:53:41,318 p=27131 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:53:41,329 p=27131 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:53:42,033 p=27131 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:53:42,075 p=27131 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:53:42,075 p=27131 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:53:50,017 p=27233 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:53:50,032 p=27233 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:53:51,717 p=27233 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:53:51,740 p=27233 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:53:52,821 p=27233 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:53:52,834 p=27233 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:53:53,997 p=27233 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:53:53,998 p=27233 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:53:53,999 p=27233 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:56:07,014 p=27332 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:56:07,039 p=27332 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:56:08,847 p=27332 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:56:08,869 p=27332 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:56:09,865 p=27332 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:56:09,877 p=27332 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:56:11,061 p=27332 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:56:11,063 p=27332 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:56:11,064 p=27332 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:58:03,530 p=27490 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/roles/apache/tasks/main.yml': line 11, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     dest: "{{ dest_folder }}"
+    remote_src: not
+    ^ here
+
+2023-05-24 00:58:19,912 p=27526 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/roles/apache/tasks/main.yml': line 11, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     dest: "{{ dest_folder }}"
+    remote_src: no
+    ^ here
+
+2023-05-24 00:58:50,590 p=27553 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:58:50,608 p=27553 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:58:52,407 p=27553 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:58:52,429 p=27553 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:58:53,454 p=27553 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:58:53,466 p=27553 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:58:54,200 p=27553 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 00:58:54,247 p=27553 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:58:54,247 p=27553 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 00:59:06,319 p=27642 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 00:59:06,340 p=27642 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 00:59:08,202 p=27642 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:59:08,225 p=27642 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 00:59:09,340 p=27642 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 00:59:09,352 p=27642 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 00:59:10,667 p=27642 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 00:59:10,673 p=27642 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 00:59:10,674 p=27642 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:01:13,627 p=27763 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:01:13,642 p=27763 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:01:15,556 p=27763 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:01:15,578 p=27763 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:01:16,611 p=27763 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:01:16,624 p=27763 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:01:17,353 p=27763 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 01:01:17,397 p=27763 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:01:17,398 p=27763 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:01:24,566 p=27843 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:01:24,582 p=27843 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:01:27,357 p=27843 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:01:27,383 p=27843 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:01:28,491 p=27843 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:01:28,503 p=27843 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:01:29,595 p=27843 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:01:29,597 p=27843 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:01:29,598 p=27843 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:02:37,986 p=27966 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:02:38,014 p=27966 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:02:39,858 p=27966 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:02:39,881 p=27966 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:02:40,937 p=27966 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:02:40,949 p=27966 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:02:41,728 p=27966 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 01:02:41,779 p=27966 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:02:41,780 p=27966 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:14:18,073 p=28106 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:14:18,088 p=28106 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:14:19,901 p=28106 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:14:19,923 p=28106 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:14:20,970 p=28106 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:14:21,013 p=28106 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:14:22,113 p=28106 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:14:22,115 p=28106 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:14:22,115 p=28106 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:21:58,374 p=28290 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:21:58,389 p=28290 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:22:00,211 p=28290 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:22:00,233 p=28290 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:22:01,327 p=28290 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:22:01,376 p=28290 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:22:02,252 p=28290 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 01:22:02,307 p=28290 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:22:02,307 p=28290 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:22:22,742 p=28404 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:22:22,760 p=28404 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:22:24,563 p=28404 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:22:24,591 p=28404 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:22:25,709 p=28404 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:22:25,742 p=28404 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:22:26,888 p=28404 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "c3f624cba5d50103c19e682f5d1b06c8578f3788", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:22:26,890 p=28404 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:22:26,890 p=28404 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:27:22,330 p=28556 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:27:22,346 p=28556 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:27:24,240 p=28556 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:27:24,263 p=28556 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:27:25,308 p=28556 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:27:25,320 p=28556 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:27:26,406 p=28556 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "e2de847a12556a528de2b7539be4eff8f307a5d6", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:27:26,408 p=28556 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:27:26,408 p=28556 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:28:35,589 p=28664 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:28:35,606 p=28664 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:28:37,556 p=28664 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:28:37,582 p=28664 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:28:38,635 p=28664 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:28:38,647 p=28664 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:28:39,780 p=28664 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "d4c0cc1b0620a7ba32104572622dbfeb3d1c60c8", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:28:39,782 p=28664 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:28:39,782 p=28664 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:31:00,956 p=28789 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:31:00,977 p=28789 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:31:04,224 p=28789 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:31:04,276 p=28789 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:31:05,416 p=28789 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:31:05,429 p=28789 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:31:06,569 p=28789 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "d4c0cc1b0620a7ba32104572622dbfeb3d1c60c8", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 01:31:06,574 p=28789 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:31:06,574 p=28789 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:36:39,216 p=28907 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/roles/apache/tasks/main.yml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     remote_src: "false"
+    notify: restart apache
+    ^ here
+
+2023-05-24 01:41:04,863 p=28976 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:41:04,881 p=28976 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:41:06,775 p=28976 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:41:06,798 p=28976 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:41:07,860 p=28976 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:41:07,874 p=28976 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:41:09,104 p=28976 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 01:41:09,151 p=28976 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:41:09,152 p=28976 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:41:31,282 p=29076 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:41:31,303 p=29076 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:41:32,964 p=29076 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:41:32,987 p=29076 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:41:34,021 p=29076 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:41:34,055 p=29076 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:41:35,136 p=29076 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:41:35,186 p=29076 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:41:35,186 p=29076 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:43:10,932 p=29180 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:43:10,950 p=29180 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:43:12,758 p=29180 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:43:12,781 p=29180 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:43:13,797 p=29180 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:43:13,809 p=29180 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:43:14,957 p=29180 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:43:15,066 p=29180 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:43:15,066 p=29180 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:44:00,050 p=29288 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:44:00,067 p=29288 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:44:01,897 p=29288 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:44:02,041 p=29288 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:44:03,777 p=29288 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:44:03,790 p=29288 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:44:04,933 p=29288 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:44:04,977 p=29288 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:44:04,978 p=29288 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 01:46:39,881 p=29393 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 01:46:39,899 p=29393 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 01:46:41,819 p=29393 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:46:41,841 p=29393 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 01:46:42,868 p=29393 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:46:42,881 p=29393 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 01:46:44,161 p=29393 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 01:46:44,208 p=29393 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 01:46:44,208 p=29393 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:02:00,674 p=29653 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:02:00,718 p=29653 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:02:02,956 p=29653 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:03,012 p=29653 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:02:04,195 p=29653 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:04,207 p=29653 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:02:04,933 p=29653 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 02:02:04,975 p=29653 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:02:04,976 p=29653 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:02:11,885 p=29746 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:02:11,904 p=29746 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:02:13,742 p=29746 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:13,765 p=29746 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:02:14,878 p=29746 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:14,890 p=29746 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:02:16,214 p=29746 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "86a324f1382b13ac7d56904ae3c6c405a109a4ff", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 02:02:16,215 p=29746 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:02:16,215 p=29746 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:02:43,997 p=29845 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:02:44,023 p=29845 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:02:45,743 p=29845 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:45,766 p=29845 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:02:46,823 p=29845 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:02:46,835 p=29845 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:02:48,028 p=29845 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "86a324f1382b13ac7d56904ae3c6c405a109a4ff", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 02:02:48,030 p=29845 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:02:48,031 p=29845 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:23:25,145 p=30257 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:23:25,165 p=30257 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:23:27,002 p=30257 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:23:27,027 p=30257 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:23:28,040 p=30257 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:23:28,054 p=30257 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:23:28,818 p=30257 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 02:23:28,893 p=30257 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:23:28,893 p=30257 u=ec2-user n=ansible | 34.239.233.106             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:25:30,308 p=30375 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:25:30,324 p=30375 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:25:32,183 p=30375 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:25:32,206 p=30375 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:25:33,222 p=30375 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:25:33,236 p=30375 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:25:34,395 p=30375 u=ec2-user n=ansible | fatal: [34.239.233.106]: FAILED! => {"changed": false, "checksum": "49b5d7172ea070d2beaeb81ed4d44ac6eeee20ad", "msg": "Unsupported parameters for (ansible.legacy.copy) module: notify. Supported parameters include: src, directory_mode, force (thirsty), unsafe_writes, remote_src, dest, checksum, seuser, setype, group, content, _original_basename, serole, mode, selevel, owner, follow, validate, backup, attributes (attr), local_follow."}
+2023-05-24 02:25:34,397 p=30375 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:25:34,398 p=30375 u=ec2-user n=ansible | 34.239.233.106             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:28:38,811 p=30486 u=ec2-user n=ansible | PLAY [qaserver] ***************************************************************************************************************************
+2023-05-24 02:28:38,826 p=30486 u=ec2-user n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-05-24 02:28:40,611 p=30486 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:28:40,636 p=30486 u=ec2-user n=ansible | TASK [apache : Install Apache] ************************************************************************************************************
+2023-05-24 02:28:41,675 p=30486 u=ec2-user n=ansible | ok: [34.239.233.106]
+2023-05-24 02:28:41,687 p=30486 u=ec2-user n=ansible | TASK [apache : copy index file] ***********************************************************************************************************
+2023-05-24 02:28:42,872 p=30486 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 02:28:42,940 p=30486 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *************************************************************************************************
+2023-05-24 02:28:43,759 p=30486 u=ec2-user n=ansible | changed: [34.239.233.106]
+2023-05-24 02:28:43,772 p=30486 u=ec2-user n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-05-24 02:28:43,773 p=30486 u=ec2-user n=ansible | 34.239.233.106             : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-24 02:39:45,081 p=30776 u=ec2-user n=ansible | Starting galaxy role install process
+2023-05-24 02:39:45,082 p=30776 u=ec2-user n=ansible | - downloading role 'java', owned by geerlingguy
+2023-05-24 02:39:45,285 p=30776 u=ec2-user n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/2.3.0.tar.gz
+2023-05-24 02:39:45,444 p=30776 u=ec2-user n=ansible | - extracting geerlingguy.java to /home/ec2-user/roles/geerlingguy.java
+2023-05-24 02:39:45,450 p=30776 u=ec2-user n=ansible | - geerlingguy.java (2.3.0) was installed successfully
+2023-05-24 02:47:57,886 p=31031 u=ec2-user n=ansible | Starting galaxy role install process
+2023-05-24 02:47:57,889 p=31031 u=ec2-user n=ansible | [WARNING]: - geerlingguy.java (2.3.0) is already installed - use --force to change version to unspecified
+
+2023-05-24 03:20:45,010 p=31632 u=ec2-user n=ansible | 34.239.233.106 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.31.2.194"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::c9:d2ff:fe4d:9cc5"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "10/16/2017",
+        "ansible_bios_vendor": "Amazon EC2",
+        "ansible_bios_version": "1.0",
+        "ansible_board_asset_tag": "i-08aae7321d857719d",
+        "ansible_board_name": "NA",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "Amazon EC2",
+        "ansible_board_version": "NA",
+        "ansible_chassis_asset_tag": "Amazon EC2",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "Amazon EC2",
+        "ansible_chassis_version": "NA",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.14.313-235.533.amzn2.x86_64",
+            "biosdevname": "0",
+            "console": "ttyS0,115200n8",
+            "net.ifnames": "0",
+            "nvme_core.io_timeout": "4294967295",
+            "rd.emergency": "poweroff",
+            "rd.shell": "0",
+            "ro": true,
+            "root": "UUID=30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+        },
+        "ansible_date_time": {
+            "date": "2023-05-24",
+            "day": "24",
+            "epoch": "1684898444",
+            "hour": "03",
+            "iso8601": "2023-05-24T03:20:44Z",
+            "iso8601_basic": "20230524T032044955344",
+            "iso8601_basic_short": "20230524T032044",
+            "iso8601_micro": "2023-05-24T03:20:44.955344Z",
+            "minute": "20",
+            "month": "05",
+            "second": "44",
+            "time": "03:20:44",
+            "tz": "UTC",
+            "tz_dst": "UTC",
+            "tz_offset": "+0000",
+            "weekday": "Wednesday",
+            "weekday_number": "3",
+            "weeknumber": "21",
+            "year": "2023"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.31.2.194",
+            "alias": "eth0",
+            "broadcast": "172.31.15.255",
+            "gateway": "172.31.0.1",
+            "interface": "eth0",
+            "macaddress": "02:c9:d2:4d:9c:c5",
+            "mtu": 9001,
+            "netmask": "255.255.240.0",
+            "network": "172.31.0.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "nvme0n1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1",
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1",
+                    "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                ],
+                "nvme0n1p1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1-part1",
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-part1",
+                    "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                ],
+                "nvme0n1p128": [
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1-part128",
+                    "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-part128",
+                    "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part128"
+                ]
+            },
+            "labels": {
+                "nvme0n1p1": [
+                    "\\x2f"
+                ]
+            },
+            "masters": {},
+            "uuids": {
+                "nvme0n1p1": [
+                    "30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "nvme0n1": {
+                "holders": [],
+                "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                "links": {
+                    "ids": [
+                        "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1",
+                        "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1",
+                        "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "Amazon Elastic Block Store",
+                "partitions": {
+                    "nvme0n1p1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1-part1",
+                                "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-part1",
+                                "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                            ],
+                            "labels": [
+                                "\\x2f"
+                            ],
+                            "masters": [],
+                            "uuids": [
+                                "30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+                            ]
+                        },
+                        "sectors": "16773087",
+                        "sectorsize": 512,
+                        "size": "8.00 GB",
+                        "start": "4096",
+                        "uuid": "30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+                    },
+                    "nvme0n1p128": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-ns-1-part128",
+                                "nvme-Amazon_Elastic_Block_Store_vol05bee099593c1c4d1-part128",
+                                "nvme-nvme.1d0f-766f6c3035626565303939353933633163346431-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part128"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2048",
+                        "sectorsize": 512,
+                        "size": "1.00 MB",
+                        "start": "2048",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "none",
+                "sectors": "16777216",
+                "sectorsize": "512",
+                "serial": "vol05bee099593c1c4d1",
+                "size": "8.00 GB",
+                "support_discard": "0",
+                "vendor": null,
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Amazon",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Amazon",
+        "ansible_distribution_major_version": "2",
+        "ansible_distribution_minor_version": "NA",
+        "ansible_distribution_release": "NA",
+        "ansible_distribution_version": "2",
+        "ansible_dns": {
+            "nameservers": [
+                "172.31.0.2"
+            ],
+            "options": {
+                "attempts": "5",
+                "timeout": "2"
+            },
+            "search": [
+                "ec2.internal"
+            ]
+        },
+        "ansible_domain": "ec2.internal",
+        "ansible_effective_group_id": 1000,
+        "ansible_effective_user_id": 1000,
+        "ansible_env": {
+            "HOME": "/home/ec2-user",
+            "LANG": "en_US.UTF-8",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "ec2-user",
+            "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/ec2-user",
+            "PATH": "/usr/local/bin:/usr/bin",
+            "PWD": "/home/ec2-user",
+            "SHELL": "/bin/bash",
+            "SHLVL": "2",
+            "SSH_CLIENT": "34.203.236.168 40184 22",
+            "SSH_CONNECTION": "34.203.236.168 40184 172.31.2.194 22",
+            "SSH_TTY": "/dev/pts/0",
+            "TERM": "xterm-256color",
+            "USER": "ec2-user",
+            "XDG_RUNTIME_DIR": "/run/user/1000",
+            "XDG_SESSION_ID": "425",
+            "_": "/usr/bin/python"
+        },
+        "ansible_eth0": {
+            "active": true,
+            "device": "eth0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "on",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "off [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "off",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "off [fixed]",
+                "tx_checksum_ipv4": "on",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "off [fixed]",
+                "tx_tcp_ecn_segmentation": "off [fixed]",
+                "tx_tcp_mangleid_segmentation": "off [fixed]",
+                "tx_tcp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.31.2.194",
+                "broadcast": "172.31.15.255",
+                "netmask": "255.255.240.0",
+                "network": "172.31.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::c9:d2ff:fe4d:9cc5",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "02:c9:d2:4d:9c:c5",
+            "module": "ena",
+            "mtu": 9001,
+            "pciid": "0000:00:05.0",
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "ip-172-31-2-194.ec2.internal",
+        "ansible_hostname": "ip-172-31-2-194",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "eth0"
+        ],
+        "ansible_is_chroot": true,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.14.313-235.533.amzn2.x86_64",
+        "ansible_kernel_version": "#1 SMP Tue Apr 25 15:24:19 UTC 2023",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "ec2376b88d36e0ae843c04da1f18c2f0",
+        "ansible_memfree_mb": 1577,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 1789,
+                "used": 153
+            },
+            "real": {
+                "free": 1577,
+                "total": 1942,
+                "used": 365
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 1942,
+        "ansible_mounts": [
+            {
+                "block_available": 1688914,
+                "block_size": 4096,
+                "block_total": 2094075,
+                "block_used": 405161,
+                "device": "/dev/nvme0n1p1",
+                "fstype": "xfs",
+                "inode_available": 4144366,
+                "inode_total": 4193216,
+                "inode_used": 48850,
+                "mount": "/",
+                "options": "rw,noatime,attr2,inode64,noquota",
+                "size_available": 6917791744,
+                "size_total": 8577331200,
+                "uuid": "30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+            }
+        ],
+        "ansible_nodename": "ip-172-31-2-194.ec2.internal",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "yum",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.14.313-235.533.amzn2.x86_64",
+            "biosdevname": "0",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "net.ifnames": "0",
+            "nvme_core.io_timeout": "4294967295",
+            "rd.emergency": "poweroff",
+            "rd.shell": "0",
+            "ro": true,
+            "root": "UUID=30d6f3ce-a17d-4caf-ac89-e9f959c387e8"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+            "1",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_nproc": 2,
+        "ansible_processor_threads_per_core": 2,
+        "ansible_processor_vcpus": 2,
+        "ansible_product_name": "t3.small",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "NA",
+        "ansible_product_version": "NA",
+        "ansible_python": {
+            "executable": "/usr/bin/python",
+            "has_sslcontext": true,
+            "type": "CPython",
+            "version": {
+                "major": 2,
+                "micro": 18,
+                "minor": 7,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                2,
+                7,
+                18,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "2.7.18",
+        "ansible_real_group_id": 1000,
+        "ansible_real_user_id": 1000,
+        "ansible_selinux": {
+            "status": "disabled"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPSger+FhgZJnGbz28Ru7xjSbu+Lw6mEdna9C4bS635kNgY5ET9WuVefiGHFAHRFbqsEmEM4VGkXOZRNYwJ5rBw=",
+        "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAILTM5CxxT2zpbAeIxKqvyP9pKh51oWda2yZaqgfqeakG",
+        "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDC7pMFuW2VojLRAlSCjOkVELfYcPKpUkV9RwNJmUXSAklxStHX2y+R1tfBT7QIlF7JvYE1iaVS/hzzBRCmMCA10l8BY7IrNaTiUH4txRNcWIGTN47emhaSAnAj17H58TLKWxMPAhKmUlvdE2snh24SMdSmMh09X2J0Oa8yqDtfYGWrIn6Ry0bL3tDlxkIJ835fLWPOsfz9e0sf7ig2bOU5caweXsHEA1LCPbnDf1O89Ko5zcjG/ifJVrGxY3+RGc1AY+uSbkMJtI32zRuNpKXd0yHBVmyydUNQym1xFNAERmk5UfmlwW/LA0fewmcwDTHSHnAMwH6VVDfaU2492HAn",
+        "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            ""
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Amazon EC2",
+        "ansible_uptime_seconds": 202308,
+        "ansible_user_dir": "/home/ec2-user",
+        "ansible_user_gecos": "EC2 Default User",
+        "ansible_user_gid": 1000,
+        "ansible_user_id": "ec2-user",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 1000,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_tech_guest": [
+            "kvm"
+        ],
+        "ansible_virtualization_tech_host": [],
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/bin/python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
